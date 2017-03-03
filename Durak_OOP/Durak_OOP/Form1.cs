@@ -15,6 +15,7 @@ namespace Durak_OOP
         public Form1()
         {
             InitializeComponent();
+            label1.Text = "Hello Durak nerdz!";
         }
     }
 }
