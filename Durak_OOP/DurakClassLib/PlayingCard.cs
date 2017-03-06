@@ -37,8 +37,8 @@ namespace DurakClassLibrary
     public class PlayingCard : ICloneable
     {
         //Constants
-        public const Suit MIN_SUIT = Suit.Spades;
-        public const Suit MAX_SUIT = Suit.Diamonds;
+        public const Suit MIN_SUIT = (Suit)0;
+        public const Suit MAX_SUIT = (Suit)3;
         public const Rank MIN_RANK = Rank.Ace;
         public const Rank MAX_RANK = Rank.King;
 
@@ -83,7 +83,7 @@ namespace DurakClassLibrary
             set
             {
                 //Card suit is out of range
-                if (value < Suit.Spades || value > Suit.Diamonds)
+                if (value < (Suit)0 || value > (Suit)3)
                 {
                     // throw an exception with a descriptive message
                     throw (new ArgumentOutOfRangeException("value", value,

@@ -15,12 +15,12 @@ namespace DurakTester
 
             DurakDeck myGameDeck= new DurakDeck();
 
-            myGameDeck.setDeck();
+            myGameDeck.SetDeck();
+            PlayingCard testCard = new PlayingCard(Rank.Ace, Suit.Clubs);
+            Console.WriteLine(myGameDeck.ToString());
 
-            //Console.WriteLine(myGameDeck.ToString());
-
-           // Console.WriteLine(testCard.ToString());
-            //Console.ReadKey();
+           Console.WriteLine(testCard.Debug());
+            Console.ReadKey();
         }
     }
 }

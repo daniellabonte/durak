@@ -22,19 +22,10 @@ namespace DurakClassLibrary
         {
             set
             {
-                if (value == 36)
-                {
-                    mySize = 36;
-                }
-                else
-                {
-                    throw (new ArgumentOutOfRangeException("Value", value, "Argument was out of range"));
-                }
+                if (value == 36) mySize = 36;
+                else throw (new ArgumentOutOfRangeException("Value", value, "Argument was out of range"));
             }
-            get
-            {
-                return mySize;
-            }
+            get { return mySize; }
 
         }
         #endregion
@@ -42,28 +33,22 @@ namespace DurakClassLibrary
         /// <summary>
         /// Sets the deck up 
         /// </summary>
-        public void setDeck()
+        public void SetDeck()
         {
-            //loops throught
-            for (Suit i = PlayingCard.MAX_SUIT; i < PlayingCard.MAX_SUIT; i++)
-            {
-                for (Rank j = PlayingCard.MIN_RANK; j < PlayingCard.MAX_RANK; j++)
-                {
-                    PlayingCard myCard = new PlayingCard((Rank)j, (Suit)i);
-                    myDeck.Add(myCard);
-                }
-            }
+            //loops through all suits and ranks to create deck
+            for (Suit i = PlayingCard.MIN_SUIT; i <= PlayingCard.MAX_SUIT; i++)
+                for (Rank j = PlayingCard.MIN_RANK; j <= PlayingCard.MAX_RANK; j++)
+                    myDeck.Add(new PlayingCard((Rank)j, (Suit)i));
         }
 
         public override string ToString()
         {
             string theString = "";
 
-            for (int i = 0; i < myDeck.Count() - 1; i++)
+            for (int i = 0; i <= this.myDeck.Count() - 1; i++)
             {
                 PlayingCard card = (PlayingCard)myDeck[i];
-
-                theString += card.ToString();
+                theString += card.ToString() + "\n";
             }
             return theString;
         }

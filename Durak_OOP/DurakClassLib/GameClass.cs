@@ -33,7 +33,7 @@ namespace DurakClassLibrary
             //add validation to the setting players
             myGamePlayers = gamePlayers;                //sets the players
             myPlayerSize = myGamePlayers.Count();       //sets player count
-            myGameDeck.setDeck();                       //sets the deck
+            myGameDeck.SetDeck();                       //sets the deck
             myTrumpCard = myGameDeck.GetTrumpCard();    //sets the trump card
 
             //call the main game logic
