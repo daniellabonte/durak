@@ -59,11 +59,11 @@ namespace DurakClassLibrary
         {
             string theString = "";
 
-            for(int i = 0; i < myDeck.Count()-1; i++)
+            for (int i = 0; i < myDeck.Count() - 1; i++)
             {
-                 PlayingCard card = (PlayingCard) myDeck[i];
+                PlayingCard card = (PlayingCard)myDeck[i];
 
-                theString += "\nRank " + card.Rank + "\nSuit " + card.Suit + "\n";
+                theString += card.ToString();
             }
             return theString;
         }
@@ -76,7 +76,7 @@ namespace DurakClassLibrary
         //get the trump card
         public PlayingCard GetTrumpCard()
         {
-            return (PlayingCard) myDeck.ElementAt(myDeck.Count() - 1);
+            return (PlayingCard)myDeck.ElementAt(myDeck.Count() - 1);
         }
 
     }

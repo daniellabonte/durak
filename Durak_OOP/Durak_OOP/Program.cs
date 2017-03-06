@@ -17,10 +17,10 @@ namespace DurakTester
 
             myGameDeck.setDeck();
 
-            Console.WriteLine(myGameDeck.ToString());
+            //Console.WriteLine(myGameDeck.ToString());
 
            // Console.WriteLine(testCard.ToString());
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }
