@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace Durak_OOP
 {
-    public partial class Form1 : Form
+    public partial class MainGame : Form
     {
-        public Form1()
+        public MainGame()
         {
             InitializeComponent();
-            label1.Text = "Hello Durak nerdz!";
+           
         }
     }
 }

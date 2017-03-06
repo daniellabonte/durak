@@ -59,9 +59,9 @@ namespace DurakClassLibrary
         {
             string theString = "";
 
-            for(int i = 0; i <3; i++)
+            for(int i = 0; i < myDeck.Count()-1; i++)
             {
-                 PlayingCard card = myDeck[i];
+                 PlayingCard card = (PlayingCard) myDeck[i];
 
                 theString += "\nRank " + card.Rank + "\nSuit " + card.Suit + "\n";
             }

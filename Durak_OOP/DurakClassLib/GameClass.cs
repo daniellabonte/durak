@@ -35,16 +35,18 @@ namespace DurakClassLibrary
             myPlayerSize = myGamePlayers.Count();       //sets player count
             myGameDeck.setDeck();                       //sets the deck
             myTrumpCard = myGameDeck.GetTrumpCard();    //sets the trump card
+
+            //call the main game logic
         }
 
         //Mutators
 
         //Remove players
-        public PlayingCard RemovePlayer(PlayingCard removingPlayer)
-        {
-            //find the value of the player in the list
+        //public PlayingCard RemovePlayer(PlayingCard removingPlayer)
+        //{
+        //    //find the value of the player in the list
 
-        }
+        //}
 
         //add players
         public void AddPlayer(PlayerClass addingPlayer)
