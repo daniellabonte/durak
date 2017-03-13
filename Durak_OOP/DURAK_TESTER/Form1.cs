@@ -22,5 +22,10 @@ namespace Durak_OOP
         {
 
         }
+
+        private void MainGame_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
