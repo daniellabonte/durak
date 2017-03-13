@@ -13,14 +13,14 @@ namespace DurakTester
         {
           //  PlayingCard testCard = new PlayingCard(Rank.Jack, Suit.Hearts);
 
-            DurakDeck myGameDeck= new DurakDeck();
+           // DurakDeck myGameDeck= new DurakDeck();
 
-            myGameDeck.setDeck();
+           // myGameDeck.setDeck();
 
-            Console.WriteLine(myGameDeck.ToString());
+           // Console.WriteLine(myGameDeck.ToString());
 
-           // Console.WriteLine(testCard.ToString());
-            Console.ReadKey();
+           //// Console.WriteLine(testCard.ToString());
+           //// Console.ReadKey();
         }
     }
 }
